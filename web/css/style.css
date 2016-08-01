@@ -277,6 +277,18 @@ input, select {
 .main-content .well .media .media-body .media-heading{
    font-size: 24px;
 }
+.main-content .thumbnail {
+	border:0;
+}
+.main-content .thumbnail .caption h3{
+	font-size:18px;
+}
+.main-content .thumbnail .caption p{
+	font-size:14px;
+}
+.main-content .thumbnail .caption .kownmore{
+	padding:8px 0;
+}
 .contact_us > li{
    font-size: 18px;
    line-height: 1.5;
@@ -314,6 +326,12 @@ input, select {
 	font-size: 18px;
 	line-height: 1.5;
 	padding-left: 30px;
+}
+#tabContent [data-toggle] > .glyphicon:before{
+   content: "\e113"
+}
+#tabContent [data-toggle].collapsed >.glyphicon:before{
+   content: "\e114"
 }
 #tabContent .glyphicon{
 	font-size: 12px;
@@ -390,6 +408,13 @@ input, select {
 	}
 	.jumbotron{
 		margin-bottom: 0;
+	}
+	#tabs{
+		border-bottom: 1px solid #909090;
+	}
+	#tabContent{
+		border-left:0;
+		padding:10px 15px;
 	}
 	.footer{
 		padding-top:10px;
