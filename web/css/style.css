@@ -336,6 +336,10 @@ input, select {
 #tabContent .glyphicon{
 	font-size: 12px;
 }
+.main-content .summary{
+	font-size: 18px;
+	line-height: 1.5;
+}
 @media (max-width: 1340px){
 	.item-desc{
 		padding:20px 15px;
