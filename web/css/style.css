@@ -327,6 +327,9 @@ input, select {
 	line-height: 1.5;
 	padding-left: 30px;
 }
+#tabContent [data-toggle]{
+	padding:10px 0;
+}
 #tabContent [data-toggle] > .glyphicon:before{
    content: "\e113"
 }
