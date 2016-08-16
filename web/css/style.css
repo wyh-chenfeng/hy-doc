@@ -127,19 +127,22 @@ input, select {
 	font-size: 14px;
 }
 .carousel-nav-control{
-	width: 40px;
-	height: 144px;
+	width: 35px;
+	height: 120px;
 	background-color: #008DCC;
 	display: block;
-	line-height: 130px;
-	font-size: 60px;
+	line-height: 120px;
+	font-size: 45px;
 	position: absolute;
 	top:50%;
-	margin-top: -72px;
+	margin-top: -60px;
 	color: #fff;
 	opacity: 1;
 	text-align: center;
 	text-decoration: none;
+}
+.carousel-nav-control img{
+	width:100%;
 }
 .carousel-nav-control:link, .carousel-nav-control:visited, .carousel-nav-control:hover,.carousel-nav-control:active{
 	text-decoration: none;
@@ -154,26 +157,26 @@ input, select {
 }
 .item-desc{
 	padding:20px 15px;
-	background-color: rgba(255,255,255,0.6);
+	background-color: #fff;
+	opacity: 0.6;
 	position: absolute;
-	width: 308px;
+	width: 302px;
 	right: 7%;
-	margin-right: 116px;
 	top:50%;
-	margin-top:-97px;
+	margin-top:-91px;
 }
 .item-desc .item-title{
-	font-size: 18px;
+	font-size: 16px;
 	color: #050505;
 }
 .item-desc .item-content{
 	padding: 15px 0;
-	font-size: 16px;
+	font-size: 14px;
 	color: #050505;
 }
 .item-desc .item-kown-more{
-	color: #000;
-	font-size: 18px;
+	color: #050505;
+	font-size: 14px;
 }
 .banners img{
 	width:100%;
@@ -212,14 +215,20 @@ input, select {
 	opacity: 0.8;
 	padding-top:41px;
 }
+.footer .container .row{
+	width:500px;
+	margin: 0 auto;
+}
 .footer p{
 	color: #fff;
 	font-size: 14px;
 	padding-bottom: 10px;
 }
-
+.footer .qrcode{
+	overflow: hidden;
+}
 .footer .qrcode .weixincode, .footer .qrcode .weibocode{
-	float: left;
+	float: right;
 }
 .footer .qrcode .weixincode>p,.footer .qrcode .weibocode>p{
 	padding-top: 10px;
@@ -227,7 +236,7 @@ input, select {
 	padding-bottom: 0; 
 }
 .footer .copyright{
-	padding: 8px 0 19px 0;
+	padding: 19px 0;
 	font-size: 12px;
 	color: #fff;
 	text-align: center;
@@ -447,7 +456,8 @@ input, select {
 		padding-top:10px;
 	}
 	.footer .copyright{
-		padding: 10px 0;
+		padding: 10px 15px;
+		text-align: left;
 	}
 }
 @media (max-width: 922px){
@@ -514,6 +524,9 @@ input, select {
 	}
 	.main-content .well .media .media-body{
 	   padding:15px 10px;
+	}
+	.footer .qrcode .weixincode, .footer .qrcode .weibocode{
+		float: left;
 	}
 }
 @media (max-width: 478px){
