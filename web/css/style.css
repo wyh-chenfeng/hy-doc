@@ -314,6 +314,7 @@ input, select {
 }
 .main-content .well .media .media-body .media-heading + p{
    font-size: 14px;
+   line-height: 1.2;
 }
 .main-content .thumbnail {
 	border:0;
