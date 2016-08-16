@@ -193,8 +193,8 @@ input, select {
 	text-decoration: none;
 }
 .banners .title{
-	font-size: 24px;
-	color: #011D45;
+	font-size: 20px;
+	color: #000;
 	padding: 17px 0 16px 0;
 	position: relative;
 	border-bottom: 1px solid #000;
@@ -267,7 +267,7 @@ input, select {
 	background-color: transparent;
 }
 .main-content .navbar-brand{
-	font-size: 21px;
+	font-size: 20px;
 	color: #000;
 	padding-left: 0;
 }
@@ -295,7 +295,7 @@ input, select {
 }
 .main_content_desc{
 	color: #050505;
-	font-size: 18px;
+	font-size: 14px;
 }
 .main-content .well .media .media-img{
    width:50%;
@@ -305,13 +305,19 @@ input, select {
 }
 .main-content .well .media .media-body{
    height:100%;
-   font-size: 18px;
+   font-size: 14px;
 }
 .main-content .well .media .media-body .media-heading{
-   font-size: 24px;
+   font-size: 20px;
+}
+.main-content .well .media .media-body .media-heading + p{
+   font-size: 14px;
 }
 .main-content .thumbnail {
 	border:0;
+}
+.main-content .thumbnail .caption{
+	padding:9px 0;
 }
 .main-content .thumbnail .caption h3{
 	font-size:18px;
@@ -323,7 +329,7 @@ input, select {
 	padding:8px 0;
 }
 .contact_us > li{
-   font-size: 18px;
+   font-size: 14px;
    line-height: 1.5;
    overflow: hidden;
 }
@@ -335,17 +341,16 @@ input, select {
 	left: 0;
 }
 .contact_us > li.address >span:last-child{
-	padding-left:60px;
+	padding-left:48px;
 	display: inline-block;
 }
 .contact_us .map{
 	padding:15px 0;
 }
-#tabs{
-	font-size:18px; 
-}
+
 #tabs li >a{
 	color: #000;
+	font-size: 14px;
 }
 #tabs li.active >a{
 	color: #008DCC;
@@ -359,6 +364,7 @@ input, select {
 	font-size: 18px;
 	line-height: 1.5;
 	padding-left: 30px;
+	font-size: 14px;
 }
 #tabContent [data-toggle]{
 	padding:10px 0;
@@ -373,7 +379,7 @@ input, select {
 	font-size: 12px;
 }
 .main-content .summary{
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 1.5;
 }
 .text-indent{
@@ -417,7 +423,6 @@ input, select {
 	}
 	.banners .title{
 		padding:13px 0 12px 60px;
-		font-size: 20px;
 	}
 	.banners .desc{
 		padding: 16px 0;
