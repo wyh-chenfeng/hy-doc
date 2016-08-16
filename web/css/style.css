@@ -313,6 +313,8 @@ input, select {
 }
 .main-content .well .media .media-body .media-heading{
    font-size: 20px;
+   margin: 0;
+   padding: 8px 0;
 }
 
 .main-content .thumbnail {
@@ -426,7 +428,7 @@ input, select {
 		height: auto;
 	}
 	.banners .title{
-		padding:13px 0 12px 60px;
+		padding:13px 0 12px 0;
 	}
 	.banners .desc{
 		padding: 16px 0;
