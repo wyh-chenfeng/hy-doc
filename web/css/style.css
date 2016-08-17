@@ -23,6 +23,7 @@ html{
 }
 body {
     line-height:1;
+    font-family: '微软雅黑'
 }
 
 :focus {
@@ -469,28 +470,7 @@ input, select {
 		padding: 10px 15px;
 		text-align: left;
 	}
-}
-@media (max-width: 922px){
-	.welcome{
-		padding:10px 0 7px;
-		font-size: 14px;
-	}
-	.item-desc{
-		padding:15px 10px;
-		margin-top: -68px;
-		margin-right: 50px;
-		width:257px;
-	}
-	.item-desc .item-title{
-		font-size: 14px;
-	}
-	.item-desc .item-content{
-		padding: 10px 0;
-		font-size: 10px;
-	}
-	.item-desc .item-kown-more{
-		font-size:10px;
-	}
+
 	.carousel-nav-control{
 		width:25px;
 		height: 84px;
@@ -499,11 +479,7 @@ input, select {
 		line-height:84px;
 	}
 }
-@media (max-width: 832px){
-	.item-desc{
-		display: none;
-	}
-}
+
 @media (max-width: 768px){
 	.header{
 		margin-bottom: 0;
@@ -520,6 +496,10 @@ input, select {
 		font-size: 30px;
 		margin-top: -36px;
 		line-height:65px;
+	}
+	#myCarousel .carousel-inner > .item {
+		height: 300px;
+		background-size: cover;
 	}
 	.main-content{
 		padding-top: 70px;
@@ -543,13 +523,23 @@ input, select {
 	.carousel-nav-control{
 		display: none;
 	}
+	.item-desc{
+		margin-right: -135px;
+		margin-top:0;
+		right:50%;
+	}
 	#myCarousel .carousel-inner > .item {
-		height: 230px;
+		height: 460px;
 		background-size: cover;
 	}
 	.main_wrap {
 		height: 230px;
 		background-size: cover;
+	}
+}
+@media (max-width: 320px){
+	#myCarousel .carousel-inner > .item {
+		height: 420px;
 	}
 }
 
