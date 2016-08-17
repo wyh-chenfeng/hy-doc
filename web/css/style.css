@@ -86,10 +86,10 @@ input, select {
 }
 .welcome a{
 	text-decoration:none;
-	color:#008DCC;
+	color:#fff;
 }
 .welcome a:hover{
-	color:#008DCC;
+	color:#fff;
 }
 .header .container{
 	position: relative;
