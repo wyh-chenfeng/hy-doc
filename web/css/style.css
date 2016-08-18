@@ -343,7 +343,7 @@ input, select {
 .main-content .thumbnail .caption{
 	padding:9px 0;
 }
-.main-content .thumbnail .caption h3{
+.main-content .thumbnail h3{
 	font-size:18px;
 	padding: 8px 0;
 }
