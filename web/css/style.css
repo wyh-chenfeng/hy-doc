@@ -98,6 +98,22 @@ input, select {
 	font-size: 14px;
 	color:#fff;
 }
+.navbar-toggle{
+	border:0;
+	color: #fff;
+}
+.well .navbar-toggle {
+	color: #050505;
+}
+.navbar-toggle .iconfont:before{
+	content: '\e60c';
+}
+.navbar-toggle.collapsed .iconfont:before{
+	content: '\e611';
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: transparent;
+}
 .header .navbar-link{
 	color:#fff;
 }
@@ -519,6 +535,11 @@ input, select {
 		float: left;
 	}
 }
+@media (max-width: 540px){
+  .footer .container .row{
+	width:auto;
+  }
+}
 @media (max-width: 478px){
 	.carousel-nav-control{
 		display: none;
@@ -542,6 +563,4 @@ input, select {
 		height: 420px;
 	}
 }
-
-
 
