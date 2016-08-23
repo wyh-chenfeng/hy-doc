@@ -23,7 +23,7 @@ html{
 }
 body {
     line-height:1;
-    font-family: '微软雅黑'
+    font-family: 'Microsoft YaHei'
 }
 
 :focus {
@@ -187,9 +187,8 @@ input, select {
 	opacity: 0.6;
 	position: absolute;
 	width: 302px;
-	right: 7%;
-	top:50%;
-	margin-top:-91px;
+	left: 7%;
+	bottom:10%;
 }
 .item-desc .item-title{
 	font-size: 16px;
@@ -201,7 +200,7 @@ input, select {
 	color: #050505;
 }
 .item-desc .item-kown-more{
-	color: #050505;
+	color: #008DCC;
 	font-size: 14px;
 }
 .banners img{
@@ -230,8 +229,15 @@ input, select {
 }
 .banners .desc{
 	font-size: 14px;
-	padding:23px 0;
+	margin:23px 0;
+	height: 145px;
 	line-height: 1.5;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
 }
 .jumbotron{
 	background: #fff;
@@ -242,10 +248,7 @@ input, select {
 	opacity: 0.8;
 	padding-top:41px;
 }
-.footer .container .row{
-	width:500px;
-	margin: 0 auto;
-}
+
 .footer p{
 	color: #fff;
 	font-size: 14px;
@@ -256,6 +259,10 @@ input, select {
 }
 .footer .qrcode .weixincode, .footer .qrcode .weibocode{
 	float: right;
+}
+.footer .qrcode .weixincode img{
+	width: 80px;
+	height: auto;
 }
 .footer .qrcode .weixincode>p,.footer .qrcode .weibocode>p{
 	padding-top: 10px;
@@ -427,6 +434,9 @@ input, select {
 .text-indent{
 	text-indent:2em;
 }
+.ac_pagination{
+	text-align: right;
+}
 @media (max-width: 1218px){
 	.carousel-nav-control{
 		width:30px;
@@ -446,9 +456,8 @@ input, select {
 	}
 	.item-desc{
 		padding:15px;
-		margin-top: -75px;
-		margin-right: 50px;
 		width:270px;
+		margin-left:20px;
 	}
 	.item-desc .item-title{
 		font-size: 16px;
@@ -539,16 +548,18 @@ input, select {
   .footer .container .row{
 	width:auto;
   }
+  	.item-desc{
+		margin-left: -135px;
+		margin-bottom:-75px;
+		left:50%;
+		bottom:50%;
+	}
 }
 @media (max-width: 478px){
 	.carousel-nav-control{
 		display: none;
 	}
-	.item-desc{
-		margin-right: -135px;
-		margin-top:-75px;
-		right:50%;
-	}
+
 	#myCarousel .carousel-inner > .item {
 		height: 460px;
 		background-size: cover;
