@@ -343,11 +343,14 @@ input, select {
 	font-size: 14px;
 	line-height: 1.5
 }
-.main-content .well .media .media-img{
-   width:50%;
+.main-content .well .media {
+	padding-bottom: 10px;
+	border-bottom:1px solid #ddd; 
 }
 .main-content .well .media .media-object{
-   width:100%;
+   width:350px;
+   float: left;
+   margin-right: 10px;
 }
 .main-content .well .media .media-body{
    height:100%;
@@ -357,11 +360,18 @@ input, select {
 .main-content .well .media .media-body .media-heading{
    font-size: 20px;
    margin: 0;
-   padding: 8px 0;
+   padding-bottom: 8px;
 }
+
 
 .main-content .thumbnail {
 	border:0;
+}
+.main-content .thumbnail:hover{
+	background-color: #f1f1f1;
+}
+.main-content .thumbnail>img{
+ 	margin: 0;
 }
 .main-content .thumbnail .caption{
 	padding:9px 0;
@@ -373,9 +383,17 @@ input, select {
 .main-content .thumbnail .caption p{
 	font-size:14px;
 	line-height: 1.5;
+	height: 126px;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
 }
 .main-content .thumbnail .caption .kownmore{
 	padding:8px 0;
+	height: auto;
 }
 .contact_us > li{
    font-size: 14px;
@@ -503,6 +521,9 @@ input, select {
 		margin-top: -30px;
 		line-height:84px;
 	}
+	.main-content .thumbnail .caption p{
+		height: auto;
+	}
 }
 
 @media (max-width: 768px){
@@ -534,8 +555,13 @@ input, select {
 	   padding-right: 0;
 	   padding-left: 0;
 	}
+	.main-content .well .media .media-body .media-heading{
+		padding-top: 8px;
+	}
 	.main-content .well .media .media-object{
 	   width:100%;
+	   float: none;
+	   margin-right: 0;
 	}
 	.main-content .well .media .media-body{
 	   padding:15px 10px;
