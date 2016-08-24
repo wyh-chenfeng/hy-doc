@@ -81,6 +81,7 @@ CREATE TABLE IF NOT EXISTS `hydb`.`t_banner` (
   `id` BIGINT NOT NULL AUTO_INCREMENT,
   `image` VARCHAR(85) NOT NULL COMMENT '图片地址',
   `title` VARCHAR(45) NULL COMMENT '标题',
+  `url` VARCHAR(255) NOT NULL COMMENT '链接地址',
   `content` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
