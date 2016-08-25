@@ -174,7 +174,22 @@ input, select {
 	text-decoration: none;
 	color: #fff;
 }
-
+#myCarousel .carousel-indicators{
+	width: 70%;
+	margin-left: -35%;
+	text-align: right;
+}
+#myCarousel .carousel-indicators li{
+	border-radius: 0;
+	border:1px solid #008DCC;
+	width:8px;
+	height: 8px;
+}
+#myCarousel .carousel-indicators .active{
+	background-color: #008DCC;
+	width:10px;
+	height: 10px;
+}
 .carousel-nav-control.left{
 	left: 20px;
 }
