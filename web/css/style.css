@@ -259,15 +259,25 @@ input, select {
 	margin-bottom: 0;
 }
 .footer{
-	background-color: #000;
+	background-color: #0e86bc;
 	opacity: 0.8;
 	padding-top:41px;
 }
-
+.footer .footer_icon img{
+	padding-left:15px;
+	margin-bottom: -4px;
+}
 .footer p{
 	color: #fff;
 	font-size: 14px;
 	padding-bottom: 10px;
+	line-height: 1.2;
+}
+.footer .container{
+	background-image: url('../images/footer.png'); 
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 .footer .qrcode{
 	overflow: hidden;
@@ -305,7 +315,8 @@ input, select {
 	background-color: #f9f9f9;
 }
 .main-content{
-	padding-top: 150px;
+	padding-top: 190px;
+	min-height: 415px;
 }
 .main-content .well{
     background: #fff;
@@ -326,6 +337,7 @@ input, select {
 	font-size: 20px;
 	color: #000;
 	padding-left: 0;
+	padding-right: 50px;
 }
 .main-content .navbar-brand:hover{
 	color: #000;
@@ -337,6 +349,8 @@ input, select {
 	color: #000;
 	font-size: 14px;
 	padding-left: 0;
+	padding-bottom: 12px;
+	padding-top: 18px;
 }
 .main-content .navbar-inverse .navbar-nav>li>a:hover{
     color:#008DCC;
@@ -362,10 +376,19 @@ input, select {
 	padding-bottom: 10px;
 	border-bottom:1px solid #ddd; 
 }
+.main-content .well .media .media-body .media-object{
+	width: 350px;
+	margin-right: 10px;
+}
 .main-content .well .media .media-object{
-   width:350px;
+   width:450px;
    float: left;
-   margin-right: 10px;
+}
+.main-content .well .media .pull-right .media-object{
+	margin-left: 10px;
+}
+.main-content .well .media .pull-left .media-object{
+	margin-right: 10px;
 }
 .main-content .well .media .media-body{
    height:100%;
@@ -382,7 +405,7 @@ input, select {
 .main-content .thumbnail {
 	border:0;
 }
-.main-content .thumbnail:hover{
+.main-content a.thumbnail:hover{
 	background-color: #f1f1f1;
 }
 .main-content .thumbnail>img{
@@ -470,6 +493,12 @@ input, select {
 .ac_pagination{
 	text-align: right;
 }
+.team_media_desc{
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.5;
+	padding: 10px 0 0;
+}
 @media (max-width: 1218px){
 	.carousel-nav-control{
 		width:30px;
@@ -525,7 +554,7 @@ input, select {
 		padding-top:10px;
 	}
 	.footer .copyright{
-		padding: 10px 15px;
+		padding: 10px 0;
 		text-align: left;
 	}
 
