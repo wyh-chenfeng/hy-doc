@@ -60,7 +60,7 @@ CREATE TABLE `t_cases_detail` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `cases_id` bigint(20) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `content` varchar(255) NOT NULL,
+  `content` text NOT NULL,
   `create_time` datetime NOT NULL,
   `update` datetime NOT NULL,
   PRIMARY KEY (`id`),
@@ -112,3 +112,10 @@ CREATE TABLE `t_position` (
   KEY `fk_t_position_m_department_idx` (`department_id`),
   CONSTRAINT `fk_t_position_m_department` FOREIGN KEY (`department_id`) REFERENCES `m_department` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `hydb`.`m_department` (`id`, `name`) VALUES ('1', '市场部');
+INSERT INTO `hydb`.`m_department` (`id`, `name`) VALUES ('2', '产品部');
+INSERT INTO `hydb`.`m_department` (`id`, `name`) VALUES ('3', '工程部');
+INSERT INTO `hydb`.`m_department` (`id`, `name`) VALUES ('4', '财务部');
+INSERT INTO `hydb`.`m_department` (`id`, `name`) VALUES ('5', '行政人事部');

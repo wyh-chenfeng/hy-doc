@@ -28,3 +28,8 @@ CREATE TABLE `t_cases_detail` (
   KEY `cases_id` (`cases_id`),
   CONSTRAINT `t_cases_detail_ibfk_1` FOREIGN KEY (`cases_id`) REFERENCES `t_cases` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `t_cases_detail`
+MODIFY COLUMN `content`  text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `image`;
+
+
