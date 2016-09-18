@@ -490,6 +490,9 @@ input, select {
 .text-indent{
 	text-indent:2em;
 }
+.text-bold{
+	font-weight:bold;
+}
 .ac_pagination{
 	text-align: right;
 }
