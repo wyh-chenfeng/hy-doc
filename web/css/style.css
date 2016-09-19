@@ -502,6 +502,13 @@ input, select {
 	line-height: 1.5;
 	padding: 10px 0 0;
 }
+.back_btn{
+	margin-top:15px;
+}
+.btn-back{
+	background-color: rgb(221,221,221);
+	color:#333;
+}
 @media (max-width: 1218px){
 	.carousel-nav-control{
 		width:30px;
