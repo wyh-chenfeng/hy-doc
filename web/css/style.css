@@ -155,7 +155,7 @@ input, select {
 .carousel-nav-control{
 	width: 35px;
 	height: 120px;
-	background-color: #008DCC;
+	/*background-color: #008DCC;*/
 	display: block;
 	line-height: 120px;
 	font-size: 45px;
@@ -266,6 +266,8 @@ input, select {
 .footer .footer_icon img{
 	padding-left:15px;
 	margin-bottom: -4px;
+	width: 140px;
+	height: auto;
 }
 .footer p{
 	color: #fff;
@@ -647,6 +649,16 @@ input, select {
 	.main_wrap {
 		height: 230px;
 		background-size: cover;
+	}
+	.footer .footer_icon img{
+		width: 120px;
+	}
+}
+@media (max-width: 368px){
+	.footer .footer_icon img{
+		padding-left: 0;
+		margin-bottom:0;
+		margin-top: 10px;
 	}
 }
 @media (max-width: 320px){
