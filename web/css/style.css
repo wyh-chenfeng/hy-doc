@@ -264,8 +264,6 @@ input, select {
 	padding-top:41px;
 }
 .footer .footer_icon img{
-	padding-left:15px;
-	margin-bottom: -4px;
 	width: 140px;
 	height: auto;
 }
@@ -654,13 +652,7 @@ input, select {
 		width: 120px;
 	}
 }
-@media (max-width: 368px){
-	.footer .footer_icon img{
-		padding-left: 0;
-		margin-bottom:0;
-		margin-top: 10px;
-	}
-}
+
 @media (max-width: 320px){
 	#myCarousel .carousel-inner > .item {
 		height: 420px;
