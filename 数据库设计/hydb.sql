@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50532
 File Encoding         : 65001
 
-Date: 2016-09-05 14:40:47
+Date: 2016-09-22 17:49:40
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -50,7 +50,7 @@ CREATE TABLE `t_cases` (
   `create_time` datetime NOT NULL,
   `update_time` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for t_cases_detail
@@ -60,13 +60,13 @@ CREATE TABLE `t_cases_detail` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `cases_id` bigint(20) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `content` text NOT NULL,
+  `content` varchar(255) NOT NULL,
   `create_time` datetime NOT NULL,
-  `update` datetime NOT NULL,
+  `update_time` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `cases_id` (`cases_id`),
   CONSTRAINT `t_cases_detail_ibfk_1` FOREIGN KEY (`cases_id`) REFERENCES `t_cases` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for t_home
@@ -86,14 +86,15 @@ CREATE TABLE `t_home` (
 DROP TABLE IF EXISTS `t_news`;
 CREATE TABLE `t_news` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `type` int(4) NOT NULL COMMENT '1:公司，2行业',
   `image` varchar(200) NOT NULL,
   `title` varchar(100) NOT NULL COMMENT '标题',
+  `summary` varchar(1000) NOT NULL,
   `content` text NOT NULL,
   `create_time` datetime NOT NULL,
   `update_time` datetime NOT NULL,
-  `type` int(4) NOT NULL COMMENT '1:公司，2行业',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for t_position
