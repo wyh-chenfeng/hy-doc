@@ -40,4 +40,7 @@ MODIFY COLUMN `type`  int(4) NOT NULL COMMENT '1:公司，2行业' AFTER `id`,
 CHANGE COLUMN `content` `summary`  varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `title`,
 ADD COLUMN `content`  text NOT NULL AFTER `summary`;
 
-
+-- 经典案例
+ALTER TABLE `t_cases`
+CHANGE COLUMN `content` `summary`  varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL AFTER `image`,
+ADD COLUMN `content`  text NOT NULL AFTER `image`;

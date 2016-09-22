@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50532
 File Encoding         : 65001
 
-Date: 2016-09-22 17:49:40
+Date: 2016-09-22 17:58:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -46,26 +46,11 @@ CREATE TABLE `t_cases` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `content` varchar(1000) NOT NULL,
+  `content` text NOT NULL,
+  `summary` varchar(1000) NOT NULL,
   `create_time` datetime NOT NULL,
   `update_time` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Table structure for t_cases_detail
--- ----------------------------
-DROP TABLE IF EXISTS `t_cases_detail`;
-CREATE TABLE `t_cases_detail` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `cases_id` bigint(20) NOT NULL,
-  `image` varchar(255) NOT NULL,
-  `content` varchar(255) NOT NULL,
-  `create_time` datetime NOT NULL,
-  `update_time` datetime NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `cases_id` (`cases_id`),
-  CONSTRAINT `t_cases_detail_ibfk_1` FOREIGN KEY (`cases_id`) REFERENCES `t_cases` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
