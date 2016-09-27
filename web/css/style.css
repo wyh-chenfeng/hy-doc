@@ -481,6 +481,9 @@ p{
 	padding:8px 0;
 	height: auto;
 }
+.main-content .media-body .kownmore i{
+	font-size: 12px;
+}
 .contact_us > li{
    font-size: 14px;
    line-height: 1.5;
