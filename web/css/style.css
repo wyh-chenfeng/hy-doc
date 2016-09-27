@@ -279,8 +279,7 @@ p{
 	margin-bottom: 0;
 }
 .footer{
-	background-color: #959595;
-	opacity: 0.8;
+	background-color: #6f6f6f;
 	padding-top:41px;
 }
 .footer .footer_icon img{
@@ -393,7 +392,6 @@ p{
 }
 .main_content_desc{
 	font-size: 14px;
-	line-height: 1.5
 }
 .main-content .well .media {
 	padding-bottom: 10px;
@@ -520,10 +518,9 @@ p{
 }
 .main-content .summary{
 	font-size: 14px;
-	line-height: 1.5;
 }
 .text-indent{
-	text-indent:25px;
+	text-indent:32px;
 }
 .text-bold{
 	font-weight:bold;
