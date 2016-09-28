@@ -740,9 +740,6 @@ p{
 	}
 }
 @media (max-width: 478px){
-	.carousel-nav-control{
-		display: none;
-	}
 
 	#myCarousel .carousel-inner > .item {
 		height: 460px;
