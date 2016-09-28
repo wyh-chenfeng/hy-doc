@@ -437,8 +437,6 @@ p{
    height:100%;
    font-size: 14px;
    text-align: left;
-   display: block;
-   width: 100%;
 }
 .main-content .well .media .media-body > h6{
    line-height: 1.8;
@@ -718,6 +716,8 @@ p{
 	}
 	.main-content .well .media .media-body{
 	   padding:0 10px;
+	   display: block;
+	   width:100%;
 	}
 	.main-content .well.activities .media .media-img{
 		width: 100%;
