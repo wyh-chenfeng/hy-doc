@@ -734,18 +734,22 @@ p{
 	}
 }
 @media (max-width: 540px){
-  .footer .container .row{
-	width:auto;
-  }
+	.footer .container .row{
+		width:auto;
+	}
   	.item-desc{
 		margin-left: -135px;
 		margin-bottom:-75px;
 		left:50%;
 		bottom:50%;
 	}
+	img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
 }
 @media (max-width: 478px){
-
 	#myCarousel .carousel-inner > .item {
 		height: 460px;
 		background-size: cover;
