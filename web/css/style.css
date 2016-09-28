@@ -156,6 +156,7 @@ p{
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
 }
 #myCarousel .carousel-inner > .item > img{
 	visibility: hidden;
@@ -300,10 +301,10 @@ p{
 	background-size: contain;
 }
 .footer .qrcode{
-	overflow: hidden;
-}
-.footer .qrcode .weixincode, .footer .qrcode .weibocode{
 	float: right;
+}
+.footer .qrcode .weibocode, .footer .qrcode .weixincode{
+	float: left;
 }
 .footer .qrcode .weibocode{
 	margin-left: 10px;
@@ -723,7 +724,7 @@ p{
 	.main-content .well.activities .media .media-body p{
 		display: block;
 	}
-	.footer .qrcode .weixincode, .footer .qrcode .weibocode{
+	.footer .qrcode{
 		float: left;
 	}
 }
