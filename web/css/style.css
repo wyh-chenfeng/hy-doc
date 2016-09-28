@@ -410,7 +410,6 @@ p{
 	-webkit-box-orient: vertical;
 }
 .main-content .well .media {
-	padding: 0 32px;
 	text-align: center;
 }
 .main-content .well .media .media-object.media_news{
@@ -438,6 +437,8 @@ p{
    height:100%;
    font-size: 14px;
    text-align: left;
+   display: block;
+   width: 100%;
 }
 .main-content .well .media .media-body > h6{
    line-height: 1.8;
@@ -589,6 +590,10 @@ p{
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 15px;
+}
+.block-indent{
+	padding-left: 28px;
+	padding-right: 28px;
 }
 @media (max-width: 1218px){
 	.carousel-nav-control{
@@ -751,6 +756,9 @@ p{
 	}
 	.footer .footer_icon img{
 		width: 120px;
+	}
+	.main-content .well{
+		padding: 15px;
 	}
 }
 
