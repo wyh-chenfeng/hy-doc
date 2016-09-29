@@ -419,7 +419,7 @@ p{
 	margin-bottom: 0;
 }
 .main-content .well .media .media-object{
-   max-width:500px;
+   max-width:890px;
    display: inline-block;
    margin:10px 0;
    float: left;
@@ -593,13 +593,16 @@ p{
 	padding-left: 28px;
 	padding-right: 28px;
 }
-@media (max-width: 1218px){
+@media (max-width: 1200px){
 	.carousel-nav-control{
 		width:30px;
 		height: 108px;
 		font-size: 40px;
 		margin-top: -54px;
 		line-height:92px;
+	}
+	.main-content .well .media .media-object{
+	   max-width:750px;
 	}
 }
 @media (max-width: 992px){
@@ -662,7 +665,9 @@ p{
 	.main-content .case_list .thumbnail>img{
 		height: auto;
 	}
-
+	.main-content .well .media .media-object{
+		max-width: 550px;
+	}
 	.main-content .well.activities .media .media-object{
 		width: 250px;
 		height: 200px;
@@ -708,7 +713,6 @@ p{
 	   width:100%;
 	   float: none;
 	   margin-right: 0;
-	   max-width: auto;
 	}
 	.main-content .well .media .media-object + .media-object{
 	   margin-left: 0;
